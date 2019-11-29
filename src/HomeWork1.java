@@ -6,8 +6,8 @@ public class HomeWork1 {
         Random number = new Random();
         byte firstByte = 50;
         byte secondByte = 100;
-        short firstShort = (short) number.nextInt(Short.MAX_VALUE+1);
-        short secondShort = (short) number.nextInt(Short.MAX_VALUE+1);
+        short firstShort = (short) number.nextInt(Short.MAX_VALUE + 1);
+        short secondShort = (short) number.nextInt(Short.MAX_VALUE + 1);
         double firstDouble = number.nextDouble();
         double secondDouble = number.nextDouble();
         float firstFloat = number.nextFloat();
