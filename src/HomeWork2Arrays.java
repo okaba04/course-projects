@@ -9,6 +9,7 @@ public class HomeWork2Arrays {
         arraySorting(arrayObjects);
         arrayAvg(array);
         arraySum(array);
+        duplicationReplacement();
     }
 
     private static void arraySorting(Integer[] array) {
@@ -33,5 +34,16 @@ public class HomeWork2Arrays {
         double avg = sum / array.length;
         System.out.println(avg);
     }
-}
 
+    private static void duplicationReplacement() {
+        int[] array = {3, 3, 2, 3, 1, 4, 2, 8, 3};
+        for (int i = 0; i < array.length; i++) {
+            for (int k = i + 1; k < array.length; k++) {
+                if (array[i] == array[k]) {
+                    array[k] = 0;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(array));
+    }
+}
