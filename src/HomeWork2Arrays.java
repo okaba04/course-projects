@@ -6,11 +6,11 @@ public class HomeWork2Arrays {
 
     public static void main(String[] args) {
         Integer[] arrayObjects = {2, 3, 1, 7, 11};
-        int[] array = {1, 2, 7, -4, 9, 0, 7};
+        int[] array = {3, 3, 2, 3, 1, -4, 2, 8, -3};
         arraySorting(arrayObjects);
         arrayAvg(array);
         arraySumPositiveValues(array);
-        duplicationReplacement();
+        duplicationReplacement(array);
     }
 
     private static void arraySorting(Integer[] array) {
@@ -37,8 +37,7 @@ public class HomeWork2Arrays {
         System.out.println(df.format(avg));
     }
 
-    private static void duplicationReplacement() {
-        int[] array = {3, 3, 2, 3, 1, 4, 2, 8, 3};
+    private static void duplicationReplacement(int[] array) {
         for (int i = 0; i < array.length; i++) {
             for (int k = i + 1; k < array.length; k++) {
                 if (array[i] == array[k]) {
