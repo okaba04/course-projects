@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.Collections;
 
@@ -8,7 +9,7 @@ public class HomeWork2Arrays {
         int[] array = {1, 2, 7, -4, 9, 0, 7};
         arraySorting(arrayObjects);
         arrayAvg(array);
-        arraySum(array);
+        arraySumPositiveValues(array);
         duplicationReplacement();
     }
 
@@ -17,7 +18,7 @@ public class HomeWork2Arrays {
         System.out.println(Arrays.toString(array));
     }
 
-    private static void arraySum(int[] array) {
+    private static void arraySumPositiveValues(int[] array) {
         int sum = 0;
         for (int number : array) {
             if (number > 0)
@@ -27,12 +28,13 @@ public class HomeWork2Arrays {
     }
 
     private static void arrayAvg(int[] array) {
+        DecimalFormat df = new DecimalFormat("####0.00");
         double sum = 0;
         for (int number : array) {
             sum += number;
         }
         double avg = sum / array.length;
-        System.out.println(avg);
+        System.out.println(df.format(avg));
     }
 
     private static void duplicationReplacement() {
