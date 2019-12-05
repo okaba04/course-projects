@@ -4,7 +4,7 @@ public class Car {
 
     private int speed;
 
-    private Car(int speed) {
+    public Car(int speed) {
         this.speed = speed;
     }
 
