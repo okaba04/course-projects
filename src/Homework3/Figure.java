@@ -1,21 +1,17 @@
 package Homework3;
 
-public class Figure {
+public class Counter {
 
     private static int count;
 
-    public Figure() {
+    public Counter() {
         count++;
     }
 
     public static void main(String[] args) {
-        Figure circle = new Figure();
-        Figure triangle = new Figure();
+        for (int i = 0; i < 5; i++) {
+            Counter counter = new Counter();
+        }
         System.out.println(count);
+    }
 }
-}
-
-
-
-
-
