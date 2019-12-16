@@ -1,10 +1,9 @@
-package HomeWork4.Task1.SpaceShapes;
+package homework4.spaceshapes;
 
-import HomeWork4.Task1.Vertex;
+import homework4.Vertex;
 
 public class Sphere extends SpaceShape {
 
-    private Vertex vertex;
     private double radius;
 
     public Sphere(double x, double y, double z, double radius) {
@@ -13,20 +12,20 @@ public class Sphere extends SpaceShape {
     }
 
     @Override
-    public double getArea() {
+    public double calculateArea() {
         return (4 * Math.PI * Math.pow(radius, 2));
     }
 
     @Override
-    public double getVolume() {
+    public double calculateVolume() {
         return (4 / 3) * Math.PI * Math.pow(radius, 3);
     }
 
     @Override
     public String toString() {
         return "Sphere: " + this.vertex +
-            ", radius = " + radius +
-            ", volume = " + getVolume() +
-            ", area = " + getArea();
+                ", radius = " + radius +
+                ", volume = " + calculateVolume() +
+                ", area = " + calculateArea();
     }
 }

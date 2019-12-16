@@ -1,4 +1,6 @@
-package HomeWork4.Task1;
+package homework4.interfaces;
+
+import homework4.Vertex;
 
 public abstract class Shape {
 

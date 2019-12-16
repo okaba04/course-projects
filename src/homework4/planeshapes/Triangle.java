@@ -1,17 +1,12 @@
-package HomeWork4.Task1.PlaneShapes;
+package homework4.planeshapes;
 
-import HomeWork4.Task1.Vertex;
+import homework4.Vertex;
 
 public class Triangle extends PlaneShape {
 
     private Vertex a;
     private Vertex b;
     private Vertex c;
-
-    private double sideA;
-    private double sideB;
-    private double sideC;
-
 
     public Triangle(double aX, double aY, double bX, double bY, double cX, double cY) {
         this.a = new Vertex(aX, aY);
@@ -24,23 +19,23 @@ public class Triangle extends PlaneShape {
     }
 
     @Override
-    public double getArea() {
+    public double calculateArea() {
         return (a.getX() * (b.getY() - c.getY()) + b.getX() * (c.getY() - a.getY()) +
-            c.getX() * (a.getY() - b.getY())) / 2;
+                c.getX() * (a.getY() - b.getY())) / 2;
     }
 
     @Override
-    public double getPerimeter() {
+    public double calculatePerimeter() {
         return sideA + sideB + sideC;
     }
 
     @Override
     public String toString() {
         return "Triangle: " +
-            "A " + a.toString() +
-            ", B " + b.toString() +
-            ", C " + c.toString() +
-            ", area = " + getArea() +
-            ", perimeter = " + getPerimeter();
+                "A " + a.toString() +
+                ", B " + b.toString() +
+                ", C " + c.toString() +
+                ", area = " + calculateArea() +
+                ", perimeter = " + calculatePerimeter();
     }
 }

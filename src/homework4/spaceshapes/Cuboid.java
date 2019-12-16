@@ -1,13 +1,8 @@
-package HomeWork4.Task1.SpaceShapes;
+package homework4.spaceshapes;
 
-import HomeWork4.Task1.Vertex;
+import homework4.Vertex;
 
 public class Cuboid extends SpaceShape {
-
-    private Vertex vertex;
-    private double width;
-    private double height;
-    private double depth;
 
     public Cuboid(double x, double y, double z, double width, double height, double depth) {
         this.vertex = new Vertex(x, y, z);
@@ -17,22 +12,22 @@ public class Cuboid extends SpaceShape {
     }
 
     @Override
-    public double getArea() {
+    public double calculateArea() {
         return 2 * ((depth * width) + (width * height) + (height * depth));
     }
 
     @Override
-    public double getVolume() {
+    public double calculateVolume() {
         return width * height * depth;
     }
 
     @Override
     public String toString() {
         return "Cuboid: " + this.vertex +
-            ", width = " + width +
-            ", height = " + height +
-            ", depth = " + depth +
-            ", volume = " + getVolume() +
-            ", area = " + getArea();
+                ", width = " + width +
+                ", height = " + height +
+                ", depth = " + depth +
+                ", volume = " + calculateVolume() +
+                ", area = " + calculateArea();
     }
 }

@@ -1,10 +1,9 @@
-package HomeWork4.Task1.PlaneShapes;
+package homework4.planeshapes;
 
-import HomeWork4.Task1.Vertex;
+import homework4.Vertex;
 
 public class Circle extends PlaneShape {
 
-    private Vertex vertex;
     private double radius;
 
     public Circle(double x, double y, double radius) {
@@ -13,20 +12,20 @@ public class Circle extends PlaneShape {
     }
 
     @Override
-    public double getArea() {
+    public double calculateArea() {
         return Math.PI * Math.pow(radius, 2);
     }
 
     @Override
-    public double getPerimeter() {
+    public double calculatePerimeter() {
         return Math.PI * radius * 2;
     }
 
     @Override
     public String toString() {
         return "Circle: " + this.vertex +
-            ", radius = " + radius +
-            ", area = " + getArea() +
-            ", perimeter = " + getPerimeter();
+                ", radius = " + radius +
+                ", area = " + calculateArea() +
+                ", perimeter = " + calculatePerimeter();
     }
 }

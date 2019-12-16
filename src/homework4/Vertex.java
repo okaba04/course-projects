@@ -1,4 +1,4 @@
-package HomeWork4.Task1;
+package homework4;
 
 public class Vertex {
 
@@ -23,10 +23,6 @@ public class Vertex {
 
     public double getY() {
         return y;
-    }
-
-    public double getZ() {
-        return z;
     }
 
     @Override
