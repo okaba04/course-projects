@@ -19,6 +19,7 @@ public class ShapeBuilder {
         Cuboid cuboid = new Cuboid(1, 3, 4, 5, 6, 7);
         Sphere sphere = new Sphere(1, 2, 10, 4);
         SquarePyramid squarePyramid = new SquarePyramid(4, 6, 5, 10, 15);
+
         List<Shape> shapes = new ArrayList<>();
         shapes.add(circle);
         shapes.add(rectangle);
