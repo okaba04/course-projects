@@ -3,7 +3,9 @@ package homework5;
 public class DataList {
     public static void buildList() {
         MyList<Number> list = new MyList<Number>();
-        list.add(2.0);
+        list.add(2.56);
+        list.add(2.3);
+        list.add(2.78);
         list.add(150);
         list.add(-1);
         list.add(32);

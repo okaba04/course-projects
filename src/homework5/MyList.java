@@ -12,7 +12,7 @@ public class MyList<T extends Number> {
     public T findLargestValue() {
         T largest = myList.get(0);
         for (int i = 0; i < myList.size(); i++) {
-            if (myList.get(i).intValue() > largest.intValue())
+            if (myList.get(i).doubleValue() > largest.doubleValue())
                 largest = myList.get(i);
         }
         return largest;
@@ -21,7 +21,7 @@ public class MyList<T extends Number> {
     public T findSmallestValue() {
         T smallest = myList.get(0);
         for (int i = 0; i < myList.size(); i++) {
-            if (myList.get(i).intValue() < smallest.intValue())
+            if (myList.get(i).doubleValue() < smallest.doubleValue())
                 smallest = myList.get(i);
         }
         return smallest;
