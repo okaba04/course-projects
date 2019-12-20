@@ -1,15 +1,15 @@
-package Homework6;
+package homework6;
 
 import java.util.ArrayList;
 
-public class MyArrayList {
+public class CombinedArrayList {
     public static void runApplication() {
         System.out.println("Task 1");
-        MyArrayList.removeElement();
+        CombinedArrayList.removeElement();
         System.out.println("Task 2");
-        MyArrayList.replaceValue();
+        CombinedArrayList.replaceValue();
         System.out.println("Task 3");
-        MyArrayList.checkCommonElements();
+        CombinedArrayList.checkCommonElements();
     }
 
     private static void removeElement() {
@@ -20,23 +20,25 @@ public class MyArrayList {
         numbersList.add(18);
         numbersList.add(20);
         numbersList.add(22);
+        System.out.println("Default List: " + numbersList);
 
         numbersList.removeIf(n -> (n % 3 == 0));
         System.out.println("Updated List: " + numbersList);
     }
 
     private static void replaceValue() {
-        ArrayList<String> array = new ArrayList<>();
-        array.add("Orange");
-        array.add("Apple");
-        array.add("Melon");
+        ArrayList<String> fruitList = new ArrayList<>();
+        fruitList.add("Orange");
+        fruitList.add("Apple");
+        fruitList.add("Melon");
+        System.out.println("Default List: " + fruitList);
 
-        int index = array.indexOf("Orange");
+        int index = fruitList.indexOf("Orange");
         if (index == -1) {
             System.out.println("Value isn't present");
         } else {
-            array.set(index, "Grapefruit");
-            System.out.println(array);
+            fruitList.set(index, "Grapefruit");
+            System.out.println("Updated List: " + fruitList);
         }
     }
 
