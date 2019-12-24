@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class LibraryReport {
 
-    public void runApp(){
+    public void runApp() {
         buildReport();
         searchByDates();
         showData();
@@ -24,8 +24,11 @@ public class LibraryReport {
 
     private void searchByDates() {
         String book = reportToDate.get(LocalDate.now());
-        if (book == null) { System.out.println("No books found");}
-        else { System.out.println(book); }
+        if (book == null) {
+            System.out.println("No books found");
+        } else {
+            System.out.println(book);
+        }
     }
 
     private void showData() {
@@ -33,6 +36,3 @@ public class LibraryReport {
         System.out.println("Books are: " + reportToDate.values());
     }
 }
-
-
-
