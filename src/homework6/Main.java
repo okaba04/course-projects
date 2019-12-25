@@ -1,8 +1,8 @@
 package homework6;
 
-public class AppExecutor {
+public class Main {
     public static void main(String[] args) {
 
-        CombinedArrayList.runApplication();
+        new CombinedArrayList().runApplication();
     }
 }
