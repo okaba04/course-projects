@@ -1,4 +1,4 @@
-package homework9.task2;
+package homework9.division;
 
 import java.util.Scanner;
 

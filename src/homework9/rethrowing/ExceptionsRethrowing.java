@@ -1,4 +1,4 @@
-package homework9.task3;
+package homework9.rethrowing;
 
 public class ExceptionsRethrowing {
 

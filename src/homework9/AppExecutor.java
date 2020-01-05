@@ -1,8 +1,8 @@
 package homework9;
 
-import homework9.task1.ExceptionExecutor;
-import homework9.task2.SafeDivision;
-import homework9.task3.ExceptionsRethrowing;
+import homework9.variousexceptions.ExceptionExecutor;
+import homework9.division.SafeDivision;
+import homework9.rethrowing.ExceptionsRethrowing;
 
 public class AppExecutor {
 
