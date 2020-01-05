@@ -1,4 +1,4 @@
-package homework8.task3;
+package homework8.movies;
 
 import java.util.ArrayList;
 import java.util.List;

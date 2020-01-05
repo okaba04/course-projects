@@ -1,4 +1,4 @@
-package homework8.task2;
+package homework8.users;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -7,7 +7,7 @@ import java.util.Map;
 
 import static java.util.stream.Collectors.toMap;
 
-public class UsersProcessing {
+public class UsersFiltering {
 
     private List<User> buildUsersList() {
         List<User> users = new ArrayList<>();
