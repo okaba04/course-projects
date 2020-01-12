@@ -10,7 +10,7 @@ public class MoviesProcessing {
     private List<Movie> firstMoviesList = new ArrayList<>();
     private List<Movie> secondMoviesList = new ArrayList<>();
 
-    private void buildMoviesLists() {
+    public MoviesProcessing() {
         firstMoviesList.add(new Movie("comics", 200));
         firstMoviesList.add(new Movie("animation", 150));
         firstMoviesList.add(new Movie("horror", 110));
@@ -27,7 +27,6 @@ public class MoviesProcessing {
     }
 
     private Map<String, List<Movie>> groupMoviesByGenre() {
-        buildMoviesLists();
         return Stream.concat(firstMoviesList.stream(), secondMoviesList.stream())
                 .collect(Collectors.groupingBy(Movie::getGenre));
     }
